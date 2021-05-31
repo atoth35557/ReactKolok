@@ -40,11 +40,7 @@ export default function HideAppBar(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar>
-          <Toolbar>
-            <Typography variant="h6">Pasha app</Typography>
-          </Toolbar>
-        </AppBar>
+        
       </HideOnScroll>
       <Grid container spacing={1} style={{ marginTop: 70, marginVertical: 10 }}>
         <Grid item xl={2} xs={2}>
