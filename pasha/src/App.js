@@ -12,12 +12,8 @@ export default function App() {
       <div>
         <TopNavigation_48691 />
         <Switch>
-          <Route path="/">
-            <RegisterForm />
-          </Route>
-          <Route path="/home">
-            <HomePage_48691 />
-          </Route>
+          <Route exact path="/" component={RegisterForm}/>
+          <Route exact path="/home" component={HomePage_48691}/>
         </Switch>
         {/* <NavBar/> */}
       </div>

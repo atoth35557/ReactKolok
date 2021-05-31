@@ -1,7 +1,11 @@
 import {
   Button,
+  FormControl,
   Grid,
+  InputLabel,
   makeStyles,
+  MenuItem,
+  Select,
   TextField,
   Typography,
 } from "@material-ui/core";
@@ -28,6 +32,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 15,
     width: "100%",
   },
+  selectForm: {
+    width: "50%",
+    minWidth: 120,
+  },
 }));
 
 const RegisterForm = () => {
@@ -35,6 +43,11 @@ const RegisterForm = () => {
   const history = useHistory();
   const register = () => {
     history.push("/home");
+  };
+  const [age, setAge] = React.useState("");
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
   };
   return (
     <Grid container className={classes.root}>
@@ -58,6 +71,47 @@ const RegisterForm = () => {
             variant="outlined"
             className={classes.formInput}
           />
+          <Grid spacing={1} className={classes.formControll}>
+            <FormControl className={classes.selectForm} variant="outlined">
+              <InputLabel id="demo-simple-select-outlined-label">
+                Sound
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-outlined-label"
+                id="demo-simple-select-outlined"
+                value={age}
+                onChange={handleChange}
+                label="Sound"
+              >
+                <MenuItem value="">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value={10}>Ten</MenuItem>
+                <MenuItem value={20}>Twenty</MenuItem>
+                <MenuItem value={30}>Thirty</MenuItem>
+              </Select>
+            </FormControl>
+
+            <FormControl className={classes.selectForm} variant="outlined">
+              <InputLabel id="demo-simple-select-outlined-label">
+                Image
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-outlined-label"
+                id="demo-simple-select-outlined"
+                value={age}
+                onChange={handleChange}
+                label="Image"
+              >
+                <MenuItem value="">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value={10}>Ten</MenuItem>
+                <MenuItem value={20}>Twenty</MenuItem>
+                <MenuItem value={30}>Thirty</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
           <Button
             onClick={register}
             variant="contained"
