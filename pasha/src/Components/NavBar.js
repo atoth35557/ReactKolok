@@ -47,17 +47,7 @@ export default function HideAppBar(props) {
           <SideNav/>
         </Grid>
         <Grid item xs={10} sm={10}>
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        
         </Grid>
       </Grid>
       <Toolbar />

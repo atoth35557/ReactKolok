@@ -6,7 +6,7 @@ const TopNavigation_48691 = () => {
     <React.Fragment>
       <AppBar>
         <Toolbar>
-          <Typography variant="h6">Pasha app</Typography>
+          <Typography variant="h6">Pavel Filipau 48691 Ship Company</Typography>
         </Toolbar>
       </AppBar>
     </React.Fragment>
