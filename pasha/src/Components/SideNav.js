@@ -32,6 +32,9 @@ export default function SideNav() {
         <ListItemLink href="/about">
           <ListItemText primary="About Us" />
         </ListItemLink>
+        <ListItemLink href="/test">
+          <ListItemText primary="Test Us" />
+        </ListItemLink>
       </List>
     </div>
   );
