@@ -53,13 +53,14 @@ const RegisterForm = () => {
     <Grid container className={classes.root}>
       <Grid item xl={3} xs={3}>
         <Grid className={classes.formControll}>
-          <Typography variant="h2">Register</Typography>
+          <Typography style={{marginLeft:0}} variant="h2">Registracja</Typography>
         </Grid>
         <Grid className={classes.formControll}>
           <TextField
             id="outlined-error-helper-text"
             label="Login"
             variant="outlined"
+            color="secondary"
             className={classes.formInput}
           />
         </Grid>
@@ -69,6 +70,7 @@ const RegisterForm = () => {
             label="Password"
             placeholder="Password"
             variant="outlined"
+            color="secondary"
             className={classes.formInput}
           />
           <Grid spacing={1} className={classes.formControll}>
@@ -80,6 +82,7 @@ const RegisterForm = () => {
                 labelId="demo-simple-select-outlined-label"
                 id="demo-simple-select-outlined"
                 value={age}
+                color="secondary"
                 onChange={handleChange}
                 label="Sound"
               >
@@ -100,6 +103,7 @@ const RegisterForm = () => {
                 labelId="demo-simple-select-outlined-label"
                 id="demo-simple-select-outlined"
                 value={age}
+                color="secondary"
                 onChange={handleChange}
                 label="Image"
               >
@@ -115,7 +119,7 @@ const RegisterForm = () => {
           <Button
             onClick={register}
             variant="contained"
-            color="primary"
+            color="secondary"
             className={classes.registerButton}
           >
             Register

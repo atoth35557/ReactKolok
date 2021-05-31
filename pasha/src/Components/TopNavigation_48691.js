@@ -4,9 +4,9 @@ import React from "react";
 const TopNavigation_48691 = () => {
   return (
     <React.Fragment>
-      <AppBar>
+      <AppBar color="secondary">
         <Toolbar>
-          <Typography variant="h6">Pavel Filipau 48691 Ship Company</Typography>
+          <Typography variant="h6">Vladyslav Kozlovskyi 48722 PieShop</Typography>
         </Toolbar>
       </AppBar>
     </React.Fragment>
